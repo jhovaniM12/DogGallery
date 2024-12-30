@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>DoggoGallery</title>
+</head>
+<body>
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
+        <!-----------------CABECERA--------------------->
+        <header id="header" class="bg-dark text-white text-center py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <h1 class="mb-0">DoggoGallery</h1>
+                            <img src="/image/dog.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <p>Find your favorite dog breed</p>
+                </div>
+            <!-- <nav class="mt-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Galeria</a></li>
+                </ul>
+            </nav> -->
+        </header>
+
+        <!-----------------CUERPO--------------------->
+        <main id="main" class="flex-grow-1">
+                <div id="spinner" class="spinner-grow" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <!-----------------CAMPO DE BUSQUEDAD--------------------->
+                  <form class="mb-3 p-2">
+                    <div class="input-group">
+                      <input type="text" id="search-bar" class="form-control" placeholder="search for your pet's breed..." aria-label="Search">
+                      <button id="search-button" class="btn-buscar btn btn-outline-secondary" type="button">Buscar</button>
+                    </div>
+                  </form>
+                  
+            <section id="gallery" class="container d-none">
+                <div id="dog-gallery" class="row justify-content-center p-4">
+                    <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100">
+                            <img src="https://placehold.co/400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4>dog 1</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="dog-tags">
+                                    <span class="badge bg-primary">life span: 8 - 10 years</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </main>
+        <!-----------------PIE DE PAGINA------------------>
+        <footer id="footer" class="bg-dark text-white text-center py-3 mt-auto">
+            <p class="mb-2">&copy; 2024 DoggoGallery. All rights reserved.</p>
+            <p class="mb-2">Developed by Jhovani</p>
+            <!-- <div class="social-media">
+                <a href="https://twitter.com/" class="text-white mx-2"><i class="fab fa-twitter p-1"></i>Twitter</a>
+                <a href="https://facebook.com/" class="text-white mx-2"><i class="fab fa-facebook p-1"></i>Facebook</a>
+                <a href="https://instagram.com/" class="text-white mx-2"><i class="fab fa-instagram p-1"></i>Instagram</a>
+            </div> -->
+        </footer>
+    </div>
+    <script type="text/javascript" src="/JS/fetch.js"></script>
+    <script type="text/javascript" src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
